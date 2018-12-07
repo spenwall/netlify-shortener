@@ -9,10 +9,6 @@ beautifully :)
 
 This will create a copy of the repo for your own account.
 
-> Optimization: set `NODE_ENV` to `production` in the environment variables.
-> This will prevent netlify from installing `devDependencies` which it does
-> not need for this project, so your deploys will be faster.
-
 ## Step 2
 
 Clone the repo on your machine and run `npm run setup`.
