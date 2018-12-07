@@ -1,5 +1,6 @@
-/example  http://example.com/
+/example1   https://example.com
+/example    http://example.com/
 
-# Make sure that this is always last it's your fallback.
-# Change it to your own website or something.
-/*        https://google.com
+# Make sure that this is always last it's yourfallback.
+# Change it to your own website orsomething.
+/*          https://google.com

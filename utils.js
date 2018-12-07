@@ -79,7 +79,6 @@ module.exports = {
   here,
   generateCode,
   commitAndPush,
-  pbcopy,
   validateUrl,
   validateUnique,
 }
