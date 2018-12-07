@@ -1,5 +1,6 @@
-/example    http://example.com/
+/giz       https://gizmodo.com
+/example   http://example.com/
 
-# Make sure that this is always last it's yourfallback.
-# Change it to your own website or something.
-/*          https://google.com
+# Make sure that this is always last it'syourfallback.
+# Change it to your own website orsomething.
+/*         https://google.com

@@ -1,6 +1,6 @@
 {
   "name": "netlify-shortener",
-  "baseUrl": "https://update-baseUrl-in-your-package.json",
+  "baseUrl": "https://shorter.spencerwallace.ca",
   "private": true,
   "version": "1.0.0",
   "description": "Uses netlify's redirect functionality to make a personal URL shortener. Works beautifully :)",
