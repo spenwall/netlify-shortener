@@ -1,6 +1,6 @@
 const path = require('path')
 const {URL} = require('url')
-const {spawn, spawnSync} = require('child_process')
+const {spawnSync} = require('child_process')
 
 const here = p => `${__dirname}/${p}`
 
@@ -41,12 +41,6 @@ function validateUnique(short, contents) {
   if (existingLink) {
     throw `A link with this code already exists. It points to ${existingLink}`
   }
-}
-
-function pbcopy(data) {
-  const proc = spawn('pbcopy')
-  proc.stdin.write(data)
-  proc.stdin.end()
 }
 
 function commitAndPush(short, longLink) {

@@ -1,0 +1,26 @@
+{
+  "name": "netlify-shortener",
+  "baseUrl": "https://update-baseUrl-in-your-package.json/",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Uses netlify's redirect functionality to make a personal URL shortener. Works beautifully :)",
+  "scripts": {
+    "setup": "npm run set-upstream",
+    "set-upstream": "git remote add upstream https://github.com/kentcdodds/netlify-shortener.git && git fetch upstream",
+    "update": "git fetch upstream && git rebase upstream/master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kentcdodds/netlify-shortener.git"
+  },
+  "keywords": [],
+  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kentcdodds/netlify-shortener/issues"
+  },
+  "homepage": "https://github.com/kentcdodds/netlify-shortener#readme",
+  "dependencies": {
+    "clipboardy": "^1.2.3"
+  }
+}

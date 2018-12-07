@@ -1,4 +1,5 @@
 const fs = require('fs')
+const clipboardy = require('clipboardy')
 const {
   format,
   here,
@@ -9,8 +10,7 @@ const {
   validateUnique,
 } = require('./utils')
 
-// TODO: update baseUrl
-const baseUrl = ''
+const {baseUrl} = require('./package.json')
 let [, , longLink, code] = process.argv
 const short = `/${code || generateCode()}`
 
@@ -28,6 +28,6 @@ fs.writeFileSync(here('_redirects'), formatted)
 commitAndPush(short, longLink)
 
 const link = `${baseUrl}${short}`
-pbcopy(link)
+clipboardy.writeSync(link)
 
 console.log(`${link} has been copied to your clipboard`)
