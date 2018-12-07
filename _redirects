@@ -1,7 +1,8 @@
+/twit      https://twitter.com
 /you       https://youtube.com
 /giz       https://gizmodo.com
 /example   http://example.com/
 
-# Make sure that this is always last it'syourfallback.
-# Change it to your own website orsomething.
+# Make sure that this is always lastit'syourfallback.
+# Change it to your own websiteorsomething.
 /*         https://bestofyoutube.com
