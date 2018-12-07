@@ -1,7 +1,6 @@
 # netlify-shortener
 
-My short URLs. Uses netlify's redirect functionality to make it work. Works
-beautifully :)
+Uses netlify's redirect functionality to make a personal URL shortener. Works beautifully :)
 
 ## Step 1
 
