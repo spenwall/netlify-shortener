@@ -11,7 +11,7 @@ This will create a copy of the repo for your own account.
 
 ## Step 2
 
-Clone the repo on your machine
+Clone the repo on your machine and run `npm run setup`.
 
 ## Step 3
 
@@ -51,10 +51,16 @@ if you want to keep it updated. Run `npm run setup` to get that connected. Then
 whenever you want to get updates you can run `npm run update` and it'll rebase
 your changes onto the updates from the original repo.
 
-# What about analytics?
+## What about analytics?
 
 I don't think Netlify will give you analytics, but you should be able to set up
 CloudFlare in front of your domain and I think they'll give you analytics.
+
+## Can I keep my links private?
+
+Netlify doesn't charge for linking up private repositories (HOW COOL IS THAT!?)
+so you can make your GitHub repo private and that should keep your links
+private.
 
 # LICENSE
 

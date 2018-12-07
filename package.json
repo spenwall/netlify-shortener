@@ -1,11 +1,11 @@
 {
   "name": "netlify-shortener",
-  "baseUrl": "https://update-baseUrl-in-your-package.json/",
+  "baseUrl": "https://update-baseUrl-in-your-package.json",
   "private": true,
   "version": "1.0.0",
   "description": "Uses netlify's redirect functionality to make a personal URL shortener. Works beautifully :)",
   "scripts": {
-    "setup": "npm run set-upstream",
+    "setup": "npm run set-upstream && npm install",
     "set-upstream": "git remote add upstream https://github.com/kentcdodds/netlify-shortener.git && git fetch upstream",
     "update": "git fetch upstream && git rebase upstream/master"
   },
