@@ -20,7 +20,7 @@
     "url": "https://github.com/kentcdodds/netlify-shortener/issues"
   },
   "homepage": "https://github.com/kentcdodds/netlify-shortener#readme",
-  "dependencies": {
+  "devDependencies": {
     "clipboardy": "^1.2.3"
   }
 }
