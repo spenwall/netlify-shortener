@@ -45,9 +45,12 @@ function validateUnique(short, contents) {
 
 function commitAndPush(short, longLink) {
   console.log(`committing: ${short} -> ${longLink}`)
-  spawnSync('git', ['commit', '-am', `${short} -> ${longLink}`])
+  spawnSync('git', ['commit', '-am', `${short} -> ${longLink}`], {
+    cwd: __dirname,
+    stdio: 'inherit',
+  })
   console.log('pushing')
-  spawnSync('git', ['push'])
+  spawnSync('git', ['push'], {cwd: __dirname, stdio: 'inherit'})
 }
 
 function validateUrl(url) {
