@@ -47,9 +47,11 @@ That's it.
 ## How do I keep things updated?
 
 There's a script in the `package.json` to wire your repo up to the upstream repo
-if you want to keep it updated. Run `npm run setup` to get that connected. Then
-whenever you want to get updates you can run `npm run update` and it'll rebase
-your changes onto the updates from the original repo.
+if you want to keep it updated. If you haven't already, run `npm run setup` to
+get that connected. Then whenever you want to get updates you can run
+`npm run update` and it'll rebase your changes onto the updates from the
+original repo. Then you'll need to force-push to your repo (because rebases
+rewrite history).
 
 ## What about analytics?
 
