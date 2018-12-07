@@ -3,19 +3,39 @@
 My short URLs. Uses netlify's redirect functionality to make it work. Works
 beautifully :)
 
+## Step 1
+
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/kentcdodds/netlify-shortener)
 
-Put this in your `.bash_profile`:
+This will create a copy of the repo for your own account.
+
+## Step 2
+
+Clone the repo on your machine
+
+## Step 3
+
+Update the `_redirects` file to have the redirects you want.
+
+Optionally update the `baseUrl` variable in `shorten.js` to the domain you're going to use.
+
+Optionally put this in your `.bash_profile` (for linux/mac):
 
 ```bash
 alias shorten="node {repo-path}/shorten.js $1 $2";
 ```
 
-Pretty magical.
+With that you'll be able to run `shorten http://example.com` (generates a random short code)
+and `shorten http://example.com/foo foo` (second argument is a specified short code). It will
+automatically update `_redirects`, commit, and push the repo which will trigger a deploy, then
+copy the URL to your clipboard. Neat right!?
 
-Oh, also, open `shorten.js` and update the baseUrl to your own base url.
+If you're on a windows machine you may need to change `pbcopy` in `utils`. I'm not sure what it'll need to be though.
 
-And if you're on a windows machine you may need to change `pbcopy` in `utils`.
+## Step 4
 
-Then just update `_redirects` to have the short URLs you want. It's great!
+On Netlify, configure a custom domain.
 
+## Step 5
+
+That's it.
